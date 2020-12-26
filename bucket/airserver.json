@@ -1,0 +1,27 @@
+{
+    "version": "5.6.3",
+    "description": "AirServer can transform a simple big screen or a projector into a universal screen mirroring receiver",
+    "homepage": "https://www.airserver.com/",
+    "url": "https://dl.airserver.com/pc32/AirServer-5.6.3-x64.msi",
+    "hash": "4a92c6e42fb2bec9fb177f6d379b3e86728d81bfe3f69fc53c175c13532b586f",
+    "pre_install": [
+        "Move-Item \"$dir\\App Dynamic\\AirServer\\*\" \"$dir\" -Force",
+        "Remove-Item \"$dir\\App Dynamic\" -Force -Recurse"
+    ],
+    "shortcuts": [
+        [
+            "AirServer.exe",
+            "AirServer"
+        ]
+    ],
+    "checkver": {
+        "url": "https://www.airserver.com/download/windows/classic/x64",
+        "regex": "AirServer-([\\d.]+)-x64.msi"
+    },
+    "autoupdate": {
+        "url": "https://dl.airserver.com/pc32/AirServer-$(version)-x64.msi",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
