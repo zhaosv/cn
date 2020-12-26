@@ -1,3 +1,3 @@
 # cn
 
-![Excavator](https://github.com/zhaoshengweifeng/cn/workflows/Excavator/badge.svg)
+![Excavator](https://github.com/zhaosv/cn/workflows/Excavator/badge.svg)
