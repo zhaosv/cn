@@ -1,0 +1,47 @@
+{
+    "homepage": "https://cemu.info/",
+    "version": "1.22.6c",
+    "license": "Freeware",
+    "architecture": {
+        "64bit": {
+            "url": "https://cemu.info/releases/cemu_1.22.6.zip",
+            "hash": "4154c7c0c9bb3fbfc7802a4329f7a144e7c53e530f273c4d04e3b938302cb7c1"
+        }
+    },
+    "extract_dir": "cemu_1.22.6",
+    "shortcuts": [
+        [
+            "cemu.exe",
+            "Cemu"
+        ]
+    ],
+    "installer": {
+        "script": [
+            "if (!(Test-Path \"$persist_dir\\settings.xml\")) {",
+            "    New-Item \"$dir\\settings.xml\" -Type File | Out-Null",
+            "}"
+        ]
+    },
+    "persist": [
+        "settings.xml",
+        "controllerProfiles",
+        "gameProfiles",
+        "graphicPacks",
+        "mlc01"
+    ],
+    "suggest": {
+        "vcredist": "extras/vcredist2015",
+        "cemuhook": "cemuhook"
+    },
+    "checkver": {
+        "regex": "Download latest version \\(v((?<version>[\\d.]+)[\\w]*?),"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://cemu.info/releases/cemu_$matchVersion.zip"
+            }
+        },
+        "extract_dir": "cemu_$matchVersion"
+    }
+}
