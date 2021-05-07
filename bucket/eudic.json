@@ -1,9 +1,9 @@
 {
-    "version": "2020-10-18",
+    "version": "2021-04-20",
     "description": "Authoritative English dictionary software, An essential tool for English learners",
     "homepage": "https://www.eudic.net/",
-    "url": "https://static.frdic.com/pkg/eudic_win.zip?v=2020-10-18",
-    "hash": "aed06a5f1cbd373018cea11c0fa45163282e17d7fd87ddef9bbdedbe87f9fc14",
+    "url": "https://static.frdic.com/pkg/eudic_win.zip?v=2021-04-20",
+    "hash": "ed42a142349f4a3c185df2940c5edeba6b4cf5a3c111530f1b0b6fe58f1efade",
     "installer": {
         "script": [
             "Expand-7zipArchive \"$dir\\eudic_win.exe\" \"$dir\"",
