@@ -1,16 +1,16 @@
 {
-    "version": "1.80",
+    "version": "1.80.1",
     "description": "Network monitoring suspension window software in Windows platform. It can display the current network speed, CPU and memory usage. It also support the functions of display in the taskbar, change skin and historical traffic statistics.",
     "homepage": "https://github.com/zhongyang219/TrafficMonitor/blob/master/README_en-us.md",
     "license": "MIT",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.80/TrafficMonitor_V1.80.1_x64_without_temperature.zip",
-            "hash": "5df868c93682ccb267b1b57b0b62fc3e9cebef76f9a3b0923cb751597b0bc53d"
+            "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.80.1/TrafficMonitor_V1.80.1_x64_without_temperature.zip",
+            "hash": "ac55eb200ef0ba93e8f678ab4256b940ed9783eabd7d0c43a823627fa40b287d"
         },
         "32bit": {
-            "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.80/TrafficMonitor_V1.80.1_x86_without_temperature.zip",
-            "hash": "351031a06d74121cecbd0f381bff1b3df7fe94ecfc779bf3b5a8864884089c9c"
+            "url": "https://github.com/zhongyang219/TrafficMonitor/releases/download/V1.80.1/TrafficMonitor_V1.80.1_x86_without_temperature.zip",
+            "hash": "8eb4f1f8b33f3a13c6619289d77f117cab01a6706e20bb15eff3ca440d60c4dd"
         }
     },
     "extract_dir": "TrafficMonitor",
