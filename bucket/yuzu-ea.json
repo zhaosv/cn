@@ -9,7 +9,7 @@
             "hash": "62c766c5089175f848580e25d7429fbd750b37ed94283542525f2caf49b4ff84"
         }
     },
-    "extract_dir": "yuzu-windows-ea",
+    "extract_dir": "yuzu-windows-msvc-early-access",
     "shortcuts": [
         [
             "yuzu.exe",
