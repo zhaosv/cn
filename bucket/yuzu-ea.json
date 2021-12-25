@@ -1,12 +1,12 @@
 {
     "homepage": "https://yuzu-emu.org/",
     "description": "Experimental emulator for the Nintendo Switch",
-    "version": "2316",
+    "version": "2347",
     "license": "GPL-2.0-only",
     "architecture": {
         "64bit": {
-            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2316/Windows-Yuzu-EA-2316.7z",
-            "hash": "5ba562c1d80d73379c91d9f037291c980845b79374e41552980ec5206d139b01"
+            "url": "https://github.com/pineappleEA/pineapple-src/releases/download/EA-2347/Windows-Yuzu-EA-2347.7z",
+            "hash": "c7bd7294e85d2fe541a52249730193d80f6e2e51d4be37aa82b60e05f0192b1c"
         }
     },
     "extract_dir": "yuzu-windows-msvc-early-access",
