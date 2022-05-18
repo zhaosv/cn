@@ -17,7 +17,8 @@
         "script": [
             "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\extracted\" -Removal",
             "Expand-MsiArchive \"$dir\\extracted\\AttachedContainer\\PMP.msi\" \"$dir\\extracted\\msi\"",
-            "Move-Item \"$dir\\extracted\\msi\\PMP\\SourceDir\\Msi\\*\" \"$dir\" -Force"
+            "Move-Item \"$dir\\extracted\\msi\\Msi\\*\" \"$dir\" -Force",
+            "Remove-Item \"$dir\\extracted\" -Force -Recurse"
         ]
     },
     "shortcuts": [
