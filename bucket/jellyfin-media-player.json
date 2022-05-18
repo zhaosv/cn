@@ -1,0 +1,43 @@
+{
+    "version": "1.6.1",
+    "description": "Desktop client using jellyfin-web with embedded MPV player",
+    "homepage": "https://github.com/jellyfin/jellyfin-media-player",
+    "license": "GPLv2",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.6.1/JellyfinMediaPlayer-1.6.1-windows-x64.exe",
+            "hash": "cc830a386d07218bcc6a1c95b1f9e105a8c517381a7e3c34677dc2b0f83f63a3"
+        },
+        "32bit": {
+            "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v1.6.1/JellyfinMediaPlayer-1.6.1-windows-x86.exe",
+            "hash": "5d6d5c8b3765013a95ef8ae15f70c3e05bcd29a55c7da86cf3799872d521f88d"
+        }
+    },
+    "installer": {
+        "script": [
+            "Expand-DarkArchive \"$dir\\$fname\" \"$dir\\extracted\" -Removal",
+            "Expand-MsiArchive \"$dir\\extracted\\AttachedContainer\\PMP.msi\" \"$dir\\extracted\\msi\"",
+            "Move-Item \"$dir\\extracted\\msi\\SourceDir\\Msi\\*\" \"$dir\" -Force",
+            "Remove-Item \"$dir\\extracted\" -Force -Recurse"
+        ]
+    }
+    "shortcuts": [
+        [
+            "JellyfinMediaPlayer.exe",
+            "Jellyfin Media Player"
+        ]
+    ],
+    "checkver": {
+        "github": "https://github.com/jellyfin/jellyfin-media-player"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v$version/JellyfinMediaPlayer-$version-windows-x64.exe"
+            },
+            "32bit": {
+                "url": "https://github.com/jellyfin/jellyfin-media-player/releases/download/v$version/JellyfinMediaPlayer-$version-windows-x86.exe"
+            }
+        }
+    }
+}
