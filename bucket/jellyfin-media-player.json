@@ -20,7 +20,7 @@
             "Move-Item \"$dir\\extracted\\msi\\SourceDir\\Msi\\*\" \"$dir\" -Force",
             "Remove-Item \"$dir\\extracted\" -Force -Recurse"
         ]
-    }
+    },
     "shortcuts": [
         [
             "JellyfinMediaPlayer.exe",
