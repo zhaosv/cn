@@ -1,0 +1,25 @@
+{
+    "version": "22.12.18",
+    "description": "Pokémon core series save editor, programmed in C#.",
+    "homepage": "https://projectpokemon.org/pkhex",
+    "license": "GPLv3",
+    "url": "https://github.com/mayswind/AriaNg-Native/releases/download/1.3.2/AriaNg_Native-1.3.2-Windows-x64.7z",
+    "hash": "48b17d2dae9d510518a02c1a99b763c759634ce06e57d2a2143d1c3d61018176",
+    "shortcuts": [
+        [
+            "PKHeX.exe",
+            "PKHeX"
+        ]
+    ],
+    "checkver": {
+        "url": "https://projectpokemon.org/home/files/file/1-pkhex",
+        "regex": "csrfKey: \"(?<key>[a-z0-9]+)\"[\\d\\D]*\"softwareVersion\": \"(?<version>[\\d.]+)\"",
+        "replace": "${version}"
+    },
+    "autoupdate": {
+        "url": "https://projectpokemon.org/home/files/file/1-pkhex/?do=download&csrfKey=$matchKey",
+        "hash": {
+            "mode": "download"
+        }
+    }
+}
