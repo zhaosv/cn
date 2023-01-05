@@ -3,7 +3,7 @@
     "description": "Pokémon core series save editor, programmed in C#.",
     "homepage": "https://projectpokemon.org/pkhex",
     "license": "GPLv3",
-    "url": "https://projectpokemon.org/home/files/file/1-pkhex/?do=download&csrfKey=ff7acb902fac686c0c23cbb098665b9b",
+    "url": "https://projectpokemon.org/home/files/file/1-pkhex/?do=download&csrfKey=ff7acb902fac686c0c23cbb098665b9b#/dl.zip",
     "hash": "48b17d2dae9d510518a02c1a99b763c759634ce06e57d2a2143d1c3d61018176",
     "shortcuts": [
         [
@@ -22,7 +22,7 @@
         "replace": "${version}"
     },
     "autoupdate": {
-        "url": "https://projectpokemon.org/home/files/file/1-pkhex/?do=download&csrfKey=$matchKey",
+        "url": "https://projectpokemon.org/home/files/file/1-pkhex/?do=download&csrfKey=$matchKey#/dl.zip",
         "hash": {
             "mode": "download"
         }
