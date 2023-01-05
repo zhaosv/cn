@@ -11,6 +11,11 @@
             "PKHeX"
         ]
     ],
+    "cookie": {
+        "ips4_IPSSessionFront": "970gcn907nvvofu42n8jcu0noe",
+        "ips4_hasJS": "true",
+        "ips4_ipsTimezone": "Asia/Shanghai"
+    },
     "checkver": {
         "url": "https://projectpokemon.org/home/files/file/1-pkhex",
         "regex": "csrfKey: \"(?<key>[a-z0-9]+)\"[\\d\\D]*\"softwareVersion\": \"(?<version>[\\d.]+)\"",
