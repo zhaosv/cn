@@ -21,7 +21,7 @@
         "regex": "(?<prefa>.*?)(?<version>[\\d.]+)(?<prefb>.*).exe"
     },
     "autoupdate": {
-        "url": "https://d1.music.126.net/dmusic/$prefa$version$prefb.exe#/dl.7z"
+        "url": "https://d1.music.126.net/dmusic/$matchprefa$version$matchprefb.exe#/dl.7z"
     },
     "notes": "Scoop doesn't persist your CloudMusic data, they are still storaged in '%LOCALAPPDATA%\\Netease\\CloudMusic'."
 }
