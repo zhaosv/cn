@@ -8,8 +8,8 @@
     },
     "url": "https://d1.music.126.net/dmusic/NeteaseCloudMusic_Music_official_2.10.8.200945.exe#/dl.7z",
     "hash": "18bafe22b23db781cfb66380973e53f2ddf856cc11d283711b8876ec4c0b176e",
+    "pre_install": "Move-Item \"$dir\\redist_packages\\*\" \"$dir\" -Force",
     "post_install": [
-        "Move-Item \"$dir\\redist_packages\\*\" \"$dir\" -Force",
         "Remove-Item \"$dir\\redist_packages\" -Force",
         "Remove-Item \"$dir\\`$PLUGINSDIR\" -Force -Recurse"
     ],
