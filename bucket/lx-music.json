@@ -3,7 +3,6 @@
     "description": "一个基于 electron 的音乐软件",
     "version": "2.6.0",
     "license": "Apache-2.0",
-    "notes": "Changing music download folder is HIGHLY recommended.",
     "architecture": {
         "64bit": {
             "url": "https://github.com/lyswhut/lx-music-desktop/releases/download/v2.6.0/lx-music-desktop-v2.6.0-win_x64-green.7z",
@@ -15,6 +14,15 @@
             "lx-music-desktop.exe",
             "洛雪音乐助手"
         ]
+    ],
+    "persist": "portable",
+    "pre_install": [
+        "if (!(Test-Path \"$persist_dir\")) {",
+        "    New-Item \"$persist_dir\" -Type Directory -Force | Out-Null",
+        "}",
+        "if (!(Test-Path \"$persist_dir\\portable\")) {",
+        "    New-Item \"$persist_dir\\portable\" -Type Directory -Force | Out-Null",
+        "}",
     ],
     "checkver": "github",
     "autoupdate": {
