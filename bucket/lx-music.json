@@ -22,7 +22,7 @@
         "}",
         "if (!(Test-Path \"$persist_dir\\portable\")) {",
         "    New-Item \"$persist_dir\\portable\" -Type Directory -Force | Out-Null",
-        "}",
+        "}"
     ],
     "checkver": "github",
     "autoupdate": {
