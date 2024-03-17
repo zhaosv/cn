@@ -1,10 +1,10 @@
 {
     "homepage": "https://github.com/GUI-for-Cores/GUI.for.SingBox",
     "description": "A GUI program developed by vue3 + wails",
-    "version": "1.4.9",
+    "version": "1.5.0",
     "license": "GPL-3.0",
-    "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.4.9/GUI.for.SingBox-windows-amd64.exe#/GUI.for.SingBox.exe",
-    "hash": "2501c31dec1d4fa4a198914b265d21f4a7d88d93b706aac631fa0a7ffd3dee9f",
+    "url": "https://github.com/GUI-for-Cores/GUI.for.SingBox/releases/download/v1.5.0/GUI.for.SingBox-windows-amd64.exe#/GUI.for.SingBox.exe",
+    "hash": "72d58876f0e302c8b85dccdb49ca00ed389be447ec70b6ad37737789ebe66d33",
     "shortcuts": [
         [
             "GUI.for.SingBox.exe",
