@@ -1,9 +1,9 @@
 {
-    "version": "12.0.11.2480",
+    "version": "12.0.12.2510",
     "description": "xunlei client",
     "homepage": "https://www.xunlei.com/",
-    "url": "https://down.sandai.net/thunder11/XunLeiSetup12.0.11.2480.exe#/dl.7z",
-    "hash": "e0e50e81de6c7e0cd3337de9c5a28f8c0592dfd4b0563153f968b6a4c4f67a43",
+    "url": "https://down.sandai.net/thunder11/XunLeiSetup12.0.12.2510.exe#/dl.7z",
+    "hash": "26d5230b6ed086412f972334d11fdf002541b95fe69a40164214540fb7f51372",
     "persist": "profiles",
     "shortcuts": [
         [
